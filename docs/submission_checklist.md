@@ -88,6 +88,7 @@
 
 - [x] **BRB-C22**: 결과물 URL과 실행 묶음(비밀번호 없는 ZIP) 가운데 하나 이상이 제출되어 있다.
   - 결과물 URL 제출: https://sktassignbrb-app-thesis.vercel.app/
+  - 실행 묶음 ZIP 제출: sktassignbrb_app_thesis.zip
 
 ---
 
@@ -98,20 +99,30 @@
 | 1 | 결과물 URL | https://sktassignbrb-app-thesis.vercel.app/ |
 | 2 | GitHub 저장소 | https://github.com/dyj02056/sktassignbrb_app_thesis |
 | 3 | 12번 사이트 대표작 연결 | https://sktassignrba-a-open-career.vercel.app/ (works 섹션) |
-| 4 | README | 저장소 루트 README.md |
-| 5 | 3개 문서 | submission_note.md, submission_checklist.md, structure.md |
+| 4 | 실행 묶음 ZIP | sktassignbrb_app_thesis.zip (비밀번호 없음, 8MB 이하) |
+| 5 | README | 저장소 루트 README.md |
+| 6 | 3개 문서 | submission_note.md, submission_checklist.md, structure.md |
 
 ---
 
 ## 짧은 확인 방법 (BRB-C13)
 
-**어디서 확인하나요**: https://sktassignbrb-app-thesis.vercel.app/
+**어디서 확인하나요**:
+
+- **앱 (ML Play)**: https://sktassignbrb-app-thesis.vercel.app/
+- **GitHub 저장소**: https://github.com/dyj02056/sktassignbrb_app_thesis
+- **12번 사이트 (포트폴리오)**: https://sktassignrba-a-open-career.vercel.app/ → `works` 섹션
+- **실행 묶음 ZIP**: `sktassignbrb_app_thesis.zip` (제출물)
+- **3개 문서**: GitHub 저장소 루트의 다음 파일들
+  - `submission_note.md` — 채팅의 모든 과정 정리
+  - `submission_checklist.md` — 이 문서 (통과 기준 체크리스트)
+  - `structure.md` — 프로젝트 구조와 기능 (비전공자용)
 
 **무엇을 하나요 (3단계 이내)**:
 
-1. URL을 새 시크릿 창에서 연다 → 타이틀 화면 (ML PLAY)
-2. START 클릭 → 안내 화면 (논문 제목 + 비교 박스) → [다음] 클릭
-3. 챕터 선택 → 원하는 챕터 클릭 → 개념 → 이야기 → [직접 해보기] → 슬라이더 움직이고 [실행] 클릭
+1. 앱 URL을 새 시크릿 창에서 연다 → 타이틀 화면 (ML PLAY) → START 클릭
+2. 안내 화면(논문 제목 + 비교 박스) → [다음] → 챕터 선택에서 원하는 챕터 클릭
+3. 각 챕터에서 개념 → 이야기 → [직접 해보기] → 슬라이더 움직이고 [실행] 클릭
 
 **무엇이 보이면 통과**:
 
@@ -122,11 +133,33 @@
 - 슬라이더를 움직이면 3D 화면이 반응
 - [실행] 클릭 시 4단계 애니메이션
 
+**ZIP 확인 방법**:
+
+1. ZIP을 새 임시 폴더에 푼다
+2. `index.html`을 더블클릭
+3. 앱이 정상 작동하는지 확인 (3D 포함)
+
+**3개 문서 확인 방법**:
+
+1. GitHub 저장소를 새 시크릿 창에서 연다
+2. 다음 3개 파일을 클릭해 내용 확인
+   - `submission_note.md` — 개발 과정 전체 기록
+   - `submission_checklist.md` — 통과 기준 체크리스트 (이 문서)
+   - `structure.md` — 프로젝트 구조·기능 설명 (비전공자용)
+
+**12번 사이트 확인 방법**:
+
+1. https://sktassignrba-a-open-career.vercel.app/ 를 새 시크릿 창에서 연다
+2. `> works` 클릭 (또는 메뉴에서 대표작 선택)
+3. "ML Play" 앱 소개 + 링크 확인
+4. "ML Play 앱 열기" 클릭 → 앱으로 이동 확인
+
 **안 될 때**:
 
 - 3D가 안 나오면 → 브라우저를 최신 Chrome/Edge로 열기 (WebGL 지원 필요)
 - 한글이 깨지면 → 폰트 로딩 문제, 새로고침
 - 슬라이더가 안 움직이면 → 페이지 새로고침
+- ZIP이 안 열리면 → 압축 프로그램 확인 (반디집, 7-Zip, 기본 압축)
 
 ---
 
