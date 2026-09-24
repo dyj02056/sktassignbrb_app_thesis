@@ -367,7 +367,7 @@ body::after {
   flex-wrap: wrap;
 }
 
-/* ===== 챕터 2, 3 공용: 3D ===== */
+/* ===== 챕터 2~6 공용: 3D ===== */
 .bp3d-overlay-top {
   display: flex;
   justify-content: space-between;
@@ -503,7 +503,7 @@ body::after {
   opacity: 0.5;
 }
 
-/* ===== 챕터 3: 이야기 매치 범례 ===== */
+/* ===== 이야기 매치 범례 (챕터 3~6) ===== */
 .of3d-legend {
   max-width: 700px;
   margin: 0 auto 1.5rem;
@@ -553,6 +553,10 @@ body::after {
   background: #333333;
   color: #333333;
   border: 1px solid #666666;
+}
+.dot-fail {
+  background: #ff4444;
+  color: #ff4444;
 }
 .dot-trail {
   background: #ffdd00;
