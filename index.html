@@ -17,7 +17,6 @@
   <pre class="ascii-title" id="title-ascii"></pre>
   <div class="divider"></div>
   <div class="subtitle" id="title-subtitle"></div>
-
   <div class="start-wrap" id="start-wrap" style="visibility:hidden;">
     <button class="start-btn" onclick="goTo('screen-intro')">START</button>
     <span class="cursor"></span>
@@ -28,12 +27,10 @@
 <section id="screen-intro" class="screen">
   <button class="back-btn" onclick="goBack()">&lt; BACK</button>
   <div class="prompt">C:\ML_PLAY&gt; intro</div>
-
   <div class="intro-box">
     <div class="paper-title" id="intro-paper-title"></div>
     <div class="paper-sub" id="intro-paper-sub"></div>
 
-    <!-- 나쁜 답변 -->
     <div class="compare-box bad" id="intro-bad-box" style="visibility:hidden;">
       <div class="compare-title" id="intro-bad-title"></div>
       <div class="compare-body">
@@ -45,7 +42,6 @@
       </div>
     </div>
 
-    <!-- 좋은 답변 -->
     <div class="compare-box good" id="intro-good-box" style="visibility:hidden;">
       <div class="compare-title" id="intro-good-title"></div>
       <div class="compare-body">
@@ -61,21 +57,37 @@
   </div>
 </section>
 
-<!-- ===== 화면 2: 챕터 선택 (임시) ===== -->
+<!-- ===== 화면 2: 챕터 선택 ===== -->
 <section id="screen-chapters" class="screen">
   <button class="back-btn" onclick="goBack()">&lt; BACK</button>
   <div class="prompt">C:\ML_PLAY&gt; select_chapter</div>
-  <div class="chapter-list">
-    <div>[1] 경사하강법</div>
-    <div>[2] 역전파</div>
-    <div>[3] 과적합</div>
-    <div>[4] 선형 회귀</div>
-    <div>[5] 로지스틱 회귀</div>
-    <div>[6] 신경망</div>
-    <div class="chapter-input">&gt; 번호를 입력하세요: <span class="cursor"></span></div>
+  <div class="chapter-list" id="chapter-list">
+    <div class="chapter-item" id="chap-item-1" onclick="openChapter(1)" style="display:none;"></div>
+    <div class="chapter-item" id="chap-item-2" onclick="openChapter(2)" style="display:none;"></div>
+    <div class="chapter-item" id="chap-item-3" onclick="openChapter(3)" style="display:none;"></div>
+    <div class="chapter-item" id="chap-item-4" onclick="openChapter(4)" style="display:none;"></div>
+    <div class="chapter-item" id="chap-item-5" onclick="openChapter(5)" style="display:none;"></div>
+    <div class="chapter-item" id="chap-item-6" onclick="openChapter(6)" style="display:none;"></div>
+    <div class="chapter-input" id="chapter-input-line" style="display:none;">&gt; 번호를 입력하세요: <span class="cursor"></span></div>
   </div>
 </section>
 
+<!-- ===== 화면 3: 챕터 동적 컨테이너 ===== -->
+<section id="screen-chapter" class="screen"></section>
+
+<!-- Three.js (로컬) -->
+<script src="lib/three.min.js"></script>
+<script src="lib/OrbitControls.js"></script>
+
+<!-- script.js 먼저 -->
 <script src="script.js"></script>
+
+<!-- 챕터들 나중에 -->
+<script src="chapters/chapter1.js"></script>
+<script src="chapters/chapter2.js"></script>
+<script src="chapters/chapter3.js"></script>
+<script src="chapters/chapter4.js"></script>
+<script src="chapters/chapter5.js"></script>
+<script src="chapters/chapter6.js"></script>
 </body>
 </html>
