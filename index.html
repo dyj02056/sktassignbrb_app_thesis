@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ML Play</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== 화면 0: 타이틀 ===== -->
+<section id="screen-title" class="screen active">
+  <div class="prompt">C:\ML_PLAY&gt;</div>
+  <pre class="ascii-title" id="title-ascii"></pre>
+  <div class="divider"></div>
+  <div class="subtitle" id="title-subtitle"></div>
+
+  <div class="start-wrap" id="start-wrap" style="visibility:hidden;">
+    <button class="start-btn" onclick="goTo('screen-intro')">START</button>
+    <span class="cursor"></span>
+  </div>
+</section>
+
+<!-- ===== 화면 1: 안내 ===== -->
+<section id="screen-intro" class="screen">
+  <button class="back-btn" onclick="goBack()">&lt; BACK</button>
+  <div class="prompt">C:\ML_PLAY&gt; intro</div>
+
+  <div class="intro-box">
+    <div class="paper-title" id="intro-paper-title"></div>
+    <div class="paper-sub" id="intro-paper-sub"></div>
+
+    <!-- 나쁜 답변 -->
+    <div class="compare-box bad" id="intro-bad-box" style="visibility:hidden;">
+      <div class="compare-title" id="intro-bad-title"></div>
+      <div class="compare-body">
+        <div class="compare-left">
+          <div class="speech-bubble" id="intro-bad-bubble"></div>
+          <img src="image/bad_end.png" alt="나쁜 답변 강아지" class="compare-img" id="intro-bad-img" style="visibility:hidden;">
+        </div>
+        <ul class="compare-right" id="intro-bad-list"></ul>
+      </div>
+    </div>
+
+    <!-- 좋은 답변 -->
+    <div class="compare-box good" id="intro-good-box" style="visibility:hidden;">
+      <div class="compare-title" id="intro-good-title"></div>
+      <div class="compare-body">
+        <div class="compare-left">
+          <div class="speech-bubble" id="intro-good-bubble"></div>
+          <img src="image/good_end.png" alt="좋은 답변 강아지" class="compare-img" id="intro-good-img" style="visibility:hidden;">
+        </div>
+        <ul class="compare-right" id="intro-good-list"></ul>
+      </div>
+    </div>
+
+    <button class="next-btn" id="intro-next-btn" onclick="goTo('screen-chapters')" style="visibility:hidden;">[ 다음 ]</button>
+  </div>
+</section>
+
+<!-- ===== 화면 2: 챕터 선택 (임시) ===== -->
+<section id="screen-chapters" class="screen">
+  <button class="back-btn" onclick="goBack()">&lt; BACK</button>
+  <div class="prompt">C:\ML_PLAY&gt; select_chapter</div>
+  <div class="chapter-list">
+    <div>[1] 경사하강법</div>
+    <div>[2] 역전파</div>
+    <div>[3] 과적합</div>
+    <div>[4] 선형 회귀</div>
+    <div>[5] 로지스틱 회귀</div>
+    <div>[6] 신경망</div>
+    <div class="chapter-input">&gt; 번호를 입력하세요: <span class="cursor"></span></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
