@@ -65,30 +65,34 @@ https://sktassignbrb-app-thesis.vercel.app/
 
 ## 파일 구조
 
-sktassignbrb_app_thesis/
-├── image/                     # 스토리 이미지
-│   ├── bad_end.png            # 나쁜 답변 강아지 (안내 화면)
-│   ├── good_end.png           # 좋은 답변 강아지 (안내 화면)
-│   ├── doro_down.jpg          # 챕터 1 (경사하강법)
-│   ├── doro_test.jpg          # 챕터 2 (역전파)
-│   ├── doro_unknown.png       # 챕터 3 (과적합)
-│   ├── doro_bmi.png           # 챕터 4 (선형 회귀)
-│   ├── doro_pass.png          # 챕터 5 (로지스틱 회귀)
-│   └── doro_chain.png         # 챕터 6 (신경망)
-├── lib/                       # 3D 라이브러리 (로컬)
-│   ├── three.min.js           # Three.js
-│   └── OrbitControls.js       # 마우스 회전 컨트롤
-├── chapters/                  # 챕터별 데이터 + 로직
-│   ├── chapter1.js            # 경사하강법
-│   ├── chapter2.js            # 역전파
-│   ├── chapter3.js            # 과적합
-│   ├── chapter4.js            # 선형 회귀
-│   ├── chapter5.js            # 로지스틱 회귀
-│   └── chapter6.js            # 신경망
-├── index.html                 # 메인 화면 (타이틀, 안내, 챕터 선택)
-├── style.css                  # 전체 스타일 (CLI 톤)
-├── script.js                  # 공통 로직 (화면 전환, 타이핑)
-└── README.md                  # 이 파일
+    sktassignbrb_app_thesis/
+    ├── image/                     # 스토리 이미지
+    │   ├── bad_end.png            # 나쁜 답변 강아지 (안내 화면)
+    │   ├── good_end.png           # 좋은 답변 강아지 (안내 화면)
+    │   ├── doro_down.jpg          # 챕터 1 (경사하강법)
+    │   ├── doro_test.jpg          # 챕터 2 (역전파)
+    │   ├── doro_unknown.png       # 챕터 3 (과적합)
+    │   ├── doro_bmi.png           # 챕터 4 (선형 회귀)
+    │   ├── doro_pass.png          # 챕터 5 (로지스틱 회귀)
+    │   └── doro_chain.png         # 챕터 6 (신경망)
+    ├── lib/                       # 3D 라이브러리 (로컬)
+    │   ├── three.min.js           # Three.js
+    │   └── OrbitControls.js       # 마우스 회전 컨트롤
+    ├── chapters/                  # 챕터별 데이터 + 로직
+    │   ├── chapter1.js            # 경사하강법
+    │   ├── chapter2.js            # 역전파
+    │   ├── chapter3.js            # 과적합
+    │   ├── chapter4.js            # 선형 회귀
+    │   ├── chapter5.js            # 로지스틱 회귀
+    │   └── chapter6.js            # 신경망
+    ├── docs/                      # 제출 문서
+    │   ├── submission_note.md     # 개발 과정 전체 기록
+    │   ├── submission_checklist.md # 통과 기준 체크리스트
+    │   └── structure.md           # 프로젝트 구조·기능 설명 (비전공자용)
+    ├── index.html                 # 메인 화면 (타이틀, 안내, 챕터 선택)
+    ├── style.css                  # 전체 스타일 (CLI 톤)
+    ├── script.js                  # 공통 로직 (화면 전환, 타이핑)
+    └── README.md                  # 이 파일
 
 ---
 
@@ -164,6 +168,16 @@ sktassignbrb_app_thesis/
 | 3D 렌더링 | 각 챕터 [직접 해보기] → 마우스 드래그 |
 | 슬라이더 반영 | 슬라이더를 약/적당/강으로 움직이고 [실행] |
 | 로그인 없이 열림 | 시크릿 창에서 URL 접속 |
+
+---
+
+## 제출 문서
+
+프로젝트 루트의 `docs/` 폴더에 제출 문서 3개가 있습니다.
+
+- `docs/submission_note.md` — 개발 과정 전체 기록
+- `docs/submission_checklist.md` — 통과 기준 체크리스트 (BRB-C01 ~ C22)
+- `docs/structure.md` — 프로젝트 구조·기능 설명 (비전공자용)
 
 ---
 
